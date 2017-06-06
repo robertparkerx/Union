@@ -1,0 +1,9 @@
+Union
+===
+
+Starter theme combining _s and Material Design
+
+Assets
+* _s by Automattic
+* Material Design by Google
+* Font Awesome by Dave Gandy
