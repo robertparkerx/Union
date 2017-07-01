@@ -1,9 +1,9 @@
 Union
 ===
 
-WordPress starter theme combining _s and Material Design
+WordPress starter theme combining _union and Material Design
 
 Assets
-* _s by Automattic
+* _union by Automattic
 * Material Design by Google
 * Font Awesome by Dave Gandy

@@ -877,7 +877,7 @@ if (jQuery) {
   });
 }( jQuery ));
 ;(function($) {
-  var _stack = 0,
+  var _uniontack = 0,
   _lastID = 0,
   _generateID = function() {
     _lastID++;
@@ -935,7 +935,7 @@ if (jQuery) {
                 options.complete.call(this, $modal);
               }
               $overlay.remove();
-              _stack--;
+              _uniontack--;
             }
           };
           if ($modal.hasClass('bottom-sheet')) {
