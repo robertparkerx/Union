@@ -6,7 +6,15 @@
  *
  * @package _union
  */
-
+/**
+ * ReduxFramework
+ */
+if ( !class_exists( 'ReduxFramework' ) && file_exists( dirname( __FILE__ ) . '/inc/ReduxFramework/ReduxCore/framework.php' ) ) {
+	require_once( dirname( __FILE__ ) . '/inc/ReduxFramework/ReduxCore/framework.php' );
+}
+if ( !isset( $redux_demo ) && file_exists( dirname( __FILE__ ) . '/inc/redux-config.php' ) ) {
+	require_once( dirname( __FILE__ ) . '/inc/redux-config.php' );
+}
 /**
  * Theme setup
  */
