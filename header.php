@@ -23,6 +23,7 @@
 <div id="page" class="site">
 	<a class="hide-on-large-only hide-on-med-and-down skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', '_union' ); ?></a>
 
+    <header id="masthead" class="site-header">
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
             <a id="logo-container" href="<?php echo esc_url( home_url( '/' ) ); ?>" class="brand-logo"><?php bloginfo( 'name' ); ?></a>
@@ -33,6 +34,8 @@
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
     </nav>
+    </header>
+
 
 
 	<div id="content" class="container site-content">

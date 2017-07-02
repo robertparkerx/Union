@@ -12,6 +12,7 @@ function union_menus() {
 	register_nav_menus( array(
 		'menu-1' => esc_html__( 'Primary', '_union' ),
 		'menu-2' => esc_html__( 'Secondary', '_union' ),
+		'social-1' => esc_html__( 'Social', '_union' ),
 	) );
 }
 add_action('after_setup_theme', 'union_menus');

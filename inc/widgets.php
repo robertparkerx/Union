@@ -17,8 +17,18 @@ function union_widgets_init() {
 		'description'   => esc_html__( 'Add widgets here.', '_union' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h5 class="widget-title">',
+		'after_title'   => '</h5>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Blog', '_union' ),
+		'id'            => 'sidebar-2',
+		'description'   => esc_html__( 'Add widgets here.', '_union' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h5 class="widget-title">',
+		'after_title'   => '</h5>',
 	) );
 }
 add_action( 'widgets_init', 'union_widgets_init' );
