@@ -16,6 +16,10 @@ require get_template_directory() . '/inc/setup.php';
  */
 require get_template_directory() . '/inc/widgets.php';
 /**
+ * materialize navwalker
+ */
+require get_template_directory() . '/inc/materialize-navwalker.php';
+/**
  * Register menus
  */
 require get_template_directory() . '/inc/menus.php';

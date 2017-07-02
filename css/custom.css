@@ -2,6 +2,9 @@
 nav ul a, nav .brand-logo, nav .button-collapse i {
     color:#3d3d3d;
 }
+.dropdown-content{
+    overflow: visible !important;
+}
 
 
 /*footer*/
