@@ -36,7 +36,11 @@
     </nav>
     </header>
 
-
+<?php if(is_page() || is_single()) :
+    if(has_post_thumbnail()) :
+        get_template_part( 'template-parts/content', 'banner' );
+    endif;
+endif; ?>
 
 	<div id="content" class="container site-content">
         <div class="section">

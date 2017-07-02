@@ -5,6 +5,12 @@ nav ul a, nav .brand-logo, nav .button-collapse i {
 .dropdown-content{
     overflow: visible !important;
 }
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
+}
 
 
 /*footer*/
