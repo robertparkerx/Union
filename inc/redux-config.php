@@ -263,25 +263,36 @@
 		'icon'  => 'el el-home'
 	) );
 
-	Redux::setSection( $opt_name, array(
-		'title'      => __( 'Header', 'redux-framework-demo' ),
-		'id'         => 'header-general-subsection',
-		'subsection' => true,
-		'fields'     => array(
-			array(
-				'id'       => 'header-logo',
-				'type'     => 'media',
-				'title'    => __( 'Logo', 'redux-framework-demo' ),
-				'url' => true,
-				'preview' => true,
-			),
-		)
-	) );
+	//Redux::setSection( $opt_name, array(
+	//	'title'      => __( 'Header', 'redux-framework-demo' ),
+	//	'id'         => 'header-general-subsection',
+	//	'subsection' => true,
+	//	'fields'     => array(
+	//		array(
+	//			'id'       => 'header-logo',
+	//			'type'     => 'media',
+	//			'title'    => __( 'Logo', 'redux-framework-demo' ),
+	//			'url' => true,
+	//			'preview' => true,
+	//		),
+	//	)
+	//) );
+
 	Redux::setSection( $opt_name, array(
 		'title'      => __( 'Footer', 'redux-framework-demo' ),
 		'id'         => 'footer-general-subsection',
 		'subsection' => true,
 		'fields'     => array(
+			array(
+				'id'       => 'footer-biotitle',
+				'type'     => 'text',
+				'title'    => __( 'Bio title', 'redux-framework-demo' ),
+			),
+			array(
+				'id'       => 'footer-biotext',
+				'type'     => 'editor',
+				'title'    => __( 'Bio text', 'redux-framework-demo' ),
+			),
 			array(
 				'id'       => 'footer-copyright',
 				'type'     => 'text',
@@ -306,31 +317,44 @@
                 'id'       => 'typo-body',
                 'type'     => 'typography',
                 'title'    => __( 'Body', 'redux-framework-demo' ),
+                'output'      => array('body'),
+
             ),
 	        array(
 		        'id'       => 'typo-h1',
 		        'type'     => 'typography',
 		        'title'    => __( 'H1', 'redux-framework-demo' ),
+		        'output'      => array('h1'),
 	        ),
 	        array(
 		        'id'       => 'typo-h2',
 		        'type'     => 'typography',
 		        'title'    => __( 'H2', 'redux-framework-demo' ),
+		        'output'      => array('h2'),
 	        ),
 	        array(
 		        'id'       => 'typo-h3',
 		        'type'     => 'typography',
 		        'title'    => __( 'H3', 'redux-framework-demo' ),
+		        'output'      => array('h3'),
 	        ),
 	        array(
 		        'id'       => 'typo-h4',
 		        'type'     => 'typography',
 		        'title'    => __( 'H4', 'redux-framework-demo' ),
+		        'output'      => array('h4'),
 	        ),
 	        array(
 		        'id'       => 'typo-h5',
 		        'type'     => 'typography',
 		        'title'    => __( 'H5', 'redux-framework-demo' ),
+		        'output'      => array('h5'),
+	        ),
+	        array(
+		        'id'       => 'typo-h6',
+		        'type'     => 'typography',
+		        'title'    => __( 'H6', 'redux-framework-demo' ),
+		        'output'      => array('h6'),
 	        ),
         )
     ) );
