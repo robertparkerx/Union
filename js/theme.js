@@ -3,8 +3,7 @@
  */
 (function($){
     $(function(){
-
-        $('.button-collapse').sideNav();
+		$('.sidenav').sidenav();
         $('.parallax').parallax();
 
     }); // end of document ready
@@ -28,4 +27,7 @@
         belowOrigin: false, // Displays dropdown below the button
         alignment: 'left' // Displays dropdown with edge aligned to the left of button
     });
+	
+	
+	
 })(jQuery); // end of jQuery name space

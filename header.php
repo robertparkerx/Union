@@ -30,8 +30,9 @@
 
 	        <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu', 'container' => '', 'menu_class' => 'right hide-on-med-and-down', 'walker' => new wp_materialize_navwalker() ) ); ?>
 
-	        <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'nav-mobile', 'container' => '', 'menu_class' => 'side-nav' ) ); ?>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+	        <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'nav-mobile', 'container' => '', 'menu_class' => 'sidenav', 'walker' => new wp_materialize_navwalker() ) ); ?>
+			
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
     </nav>
     </header>
