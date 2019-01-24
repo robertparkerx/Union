@@ -103,7 +103,7 @@ class Materialize_Walker_Nav_Menu extends Walker_Nav_Menu {
 				$this->submenu_unique_id = 'dropdown-'.uniqid();
 				$atts['data-target'] = $this->submenu_unique_id;
 				$atts['data-coverTrigger'] = 'true';
-				if( strpos( $args->menu_class , 'side-nav' ) !== FALSE ) {
+				if( strpos( $args->menu_class , 'sidenav' ) !== FALSE ) {
 					$atts['class'] = ' side-menu-nav-item-dropdown-button';
 				} else {
 					$atts['class'] = ' nav-item-dropdown-button';
