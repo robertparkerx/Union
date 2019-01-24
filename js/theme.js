@@ -9,7 +9,8 @@
     }); // end of document ready
 
     // main dropdown initialization
-    $(".dropdown-trigger").dropdown();
+	jQuery(".nav-item-dropdown-button").dropdown({constrainWidth: true});
+	jQuery(".side-menu-nav-item-dropdown-button").dropdown({constrainWidth: false});
 	
 	
 	

@@ -28,9 +28,9 @@
         <div class="nav-wrapper container">
             <a id="logo-container" href="<?php echo esc_url( home_url( '/' ) ); ?>" class="brand-logo"><?php bloginfo( 'name' ); ?></a>
 
-	        <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu', 'container' => '', 'menu_class' => 'right hide-on-med-and-down', 'walker' => new wp_materialize_navwalker() ) ); ?>
+	        <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu', 'container' => '', 'menu_class' => 'right hide-on-med-and-down', 'walker' => new Materialize_Walker_Nav_Menu() ) ); ?>
 
-	        <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'nav-mobile', 'container' => '', 'menu_class' => 'sidenav', 'walker' => new wp_materialize_navwalker() ) ); ?>
+	        <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'nav-mobile', 'container' => '', 'menu_class' => 'sidenav', 'walker' => new Materialize_Walker_Nav_Menu() ) ); ?>
 			
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
