@@ -1,15 +1,5 @@
 <?php
 
-/**
- * Class Name: wp_materialize_navwalker
- * GitHub URI: #
- * Description: A custom WordPress nav walker class to "fully" implement the Materialize CSS nested navigation style in a custom theme using the WordPress manager
- * Version: 1.0.0
- * Author: Kailo - https://kailo.io
- * License: MIT
- * License URI: #
- */
-
 class Materialize_Walker_Nav_Menu extends Walker_Nav_Menu {
 	/**
 	 * Unique id for dropdowns
